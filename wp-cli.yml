@@ -1,0 +1,10 @@
+path: web/wp
+server:
+  docroot: web
+
+@development:
+  ssh: vagrant@acgreencaps.test/srv/www/acgreencaps.com/current
+@staging:
+  ssh: admin@staging.acgreencaps.com/srv/www/acgreencaps.com/current
+@production:
+  ssh: admin@acgreencaps.com/srv/www/acgreencaps.com/current
