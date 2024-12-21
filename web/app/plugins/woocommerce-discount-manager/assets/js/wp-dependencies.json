@@ -1,0 +1,1 @@
+{"admin/order-admin.js":{"dependencies":[],"version":"d813860113c07ccdeb58"},"admin/discounts-editor.js":{"dependencies":["lodash","react","react-dom","wp-api-fetch","wp-components","wp-date","wp-deprecated","wp-element","wp-hooks","wp-html-entities","wp-i18n","wp-polyfill"],"version":"c7d61376b1267085df40"}}

@@ -1,0 +1,1 @@
+{"admin/settings-panel.js":{"dependencies":["lodash","react","react-dom","wp-api-fetch","wp-components","wp-element","wp-hooks","wp-html-entities","wp-polyfill"],"version":"ea877c8b0362036edfc0"}}

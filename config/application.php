@@ -182,7 +182,7 @@ define('THEME_PROPERTIES', [
     // Absolute path eg: https://mysite.com/wp-content/uploads/some-icon.svg
     'button_icon' => '',
     // Fallback text for "Rey" button icons, if the icon is disabled
-    'button_text' => 'REY',
+    'button_text' => 'ACG',
     // Disables the Setup Wizard
     'setup_wizard' => false,
     // Disables the demo import page. Better to just remove "One click demo import" plugin entirely.

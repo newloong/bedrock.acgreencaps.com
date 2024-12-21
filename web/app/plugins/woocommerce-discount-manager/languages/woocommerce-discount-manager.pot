@@ -1,0 +1,1736 @@
+# Copyright (C) 2024 Barn2 Plugins
+# This file is distributed under the GNU General Public License v3.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Discount Manager 1.2.2\n"
+"Report-Msgid-Bugs-To: https://barn2.com/support-center/\n"
+"Last-Translator: Barn2 Plugins <support@barn2.com>\n"
+"Language-Team: Barn2 Plugins <support@barn2.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-11-11T00:00:00+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.8.1\n"
+"X-Domain: woocommerce-discount-manager\n"
+
+#. Plugin Name of the plugin
+#: dist/woocommerce-discount-manager/src/Admin/Settings_Page.php:164
+#: src/Admin/Settings_Page.php:164
+msgid "WooCommerce Discount Manager"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://barn2.com/wordpress-plugins/woocommerce-discount-manager/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Add advanced pricing rules and discounts to WooCommerce."
+msgstr ""
+
+#. Author of the plugin
+msgid "Barn2 Plugins"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://barn2.com"
+msgstr ""
+
+#: dependencies/barn2/barn2-lib/src/Admin/Settings_API_Helper.php:154
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Admin/Settings_API_Helper.php:154
+msgid "[View page]"
+msgstr ""
+
+#: dependencies/barn2/barn2-lib/src/Admin/Settings_API_Helper.php:512
+#: dependencies/barn2/barn2-lib/src/WooCommerce/Admin/Custom_Settings_Fields.php:138
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Admin/Settings_API_Helper.php:512
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/WooCommerce/Admin/Custom_Settings_Fields.php:138
+msgid "Size"
+msgstr ""
+
+#: dependencies/barn2/barn2-lib/src/Admin/Settings_Util.php:70
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Admin/Settings_Util.php:70
+#: dist/woocommerce-discount-manager/src/Admin/Settings_Page.php:218
+#: src/Admin/Settings_Page.php:218
+msgid "Documentation"
+msgstr ""
+
+#: dependencies/barn2/barn2-lib/src/Admin/Settings_Util.php:70
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Admin/Settings_Util.php:70
+#: dist/woocommerce-discount-manager/src/Admin/Settings_Page.php:219
+#: src/Admin/Settings_Page.php:219
+msgid "Support"
+msgstr ""
+
+#: dependencies/barn2/barn2-lib/src/Plugin/Admin/Admin_Links.php:47
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/Admin/Admin_Links.php:47
+#: dist/woocommerce-discount-manager/src/Admin/Settings_Tab/General.php:38
+#: src/Admin/Settings_Tab/General.php:38
+msgid "Settings"
+msgstr ""
+
+#. translators: %s: The plugin name
+#: dependencies/barn2/barn2-lib/src/Plugin/Admin/Admin_Links.php:63
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/Admin/Admin_Links.php:63
+msgid "View %s documentation"
+msgstr ""
+
+#: dependencies/barn2/barn2-lib/src/Plugin/Admin/Admin_Links.php:64
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/Admin/Admin_Links.php:64
+msgid "Docs"
+msgstr ""
+
+#. translators: 1: licence key link start, 2: license key link end
+#: dependencies/barn2/barn2-lib/src/Plugin/Admin/Plugin_Updater.php:156
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/Admin/Plugin_Updater.php:156
+msgid "Activate %1$syour license key%2$s to enable updates."
+msgstr ""
+
+#: dependencies/barn2/barn2-lib/src/Plugin/Admin/Plugin_Updater.php:211
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/Admin/Plugin_Updater.php:211
+msgid "Auto-updates unavailable."
+msgstr ""
+
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Key_Setting.php:58
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Key_Setting.php:58
+msgid "License key successfully activated."
+msgstr ""
+
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Key_Setting.php:58
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Key_Setting.php:58
+msgid "There was an error activating your license key."
+msgstr ""
+
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Key_Setting.php:62
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Key_Setting.php:62
+msgid "License key successfully deactivated."
+msgstr ""
+
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Key_Setting.php:62
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Key_Setting.php:62
+msgid "There was an error deactivating your license key, please try again."
+msgstr ""
+
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Key_Setting.php:65
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Key_Setting.php:65
+msgid "The license key looks good!"
+msgstr ""
+
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Key_Setting.php:65
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Key_Setting.php:65
+msgid "There's a problem with your license key."
+msgstr ""
+
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Key_Setting.php:107
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Key_Setting.php:107
+#: dist/woocommerce-discount-manager/src/Admin/Settings_Controller.php:92
+#: src/Admin/Settings_Controller.php:92
+msgid "License key"
+msgstr ""
+
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Key_Setting.php:109
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Key_Setting.php:109
+msgid "The licence key is contained in your order confirmation email."
+msgstr ""
+
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Key_Setting.php:112
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Key_Setting.php:112
+msgid "License Key"
+msgstr ""
+
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Key_Setting.php:131
+#: dependencies/barn2/settings-api/src/Settings_Manager.php:248
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Key_Setting.php:131
+#: dist/woocommerce-discount-manager/dependencies/barn2/settings-api/src/Settings_Manager.php:248
+msgid "Check"
+msgstr ""
+
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Key_Setting.php:131
+#: dependencies/barn2/settings-api/src/Settings_Manager.php:248
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Key_Setting.php:131
+#: dist/woocommerce-discount-manager/dependencies/barn2/settings-api/src/Settings_Manager.php:248
+msgid "Activate"
+msgstr ""
+
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Key_Setting.php:131
+#: dependencies/barn2/settings-api/src/Settings_Manager.php:248
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Key_Setting.php:131
+#: dist/woocommerce-discount-manager/dependencies/barn2/settings-api/src/Settings_Manager.php:248
+msgid "Deactivate"
+msgstr ""
+
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Key_Setting.php:139
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Key_Setting.php:139
+msgid "License key deactivated."
+msgstr ""
+
+#. translators: 1: the plugin name, 2: settings link start, 3: settings link end.
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Notices.php:82
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Notices.php:82
+msgid "Thank you for installing %1$s. To get started, please %2$s enter your license key%3$s."
+msgstr ""
+
+#. translators: 1: the plugin name, 2: renewal link start, 3: renewal link end.
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Notices.php:107
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Notices.php:107
+msgid "Your license key for %1$s has expired. %2$sClick here to renew for 20%% discount%3$s."
+msgstr ""
+
+#. translators: 1: the plugin name, 2: renewal link start, 3: renewal link end.
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Notices.php:132
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Notices.php:132
+msgid "You no longer have a valid license for %1$s. Please %2$spurchase a new license key%3$s to continue using the plugin."
+msgstr ""
+
+#. translators: 1: the plugin name, 2: settings link start, 3: settings link end.
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Notices.php:160
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Admin/License_Notices.php:160
+msgid "%1$s - your site has moved to a new domain. Please %2$sreactivate your license key%3$s."
+msgstr ""
+
+#: dependencies/barn2/barn2-lib/src/Plugin/License/EDD_Licensing.php:147
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/EDD_Licensing.php:147
+msgid "An error has occurred, please try again."
+msgstr ""
+
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:90
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:90
+msgid "Your license key is active."
+msgstr ""
+
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:110
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:110
+msgid "Please enter your license key."
+msgstr ""
+
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:112
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:332
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:112
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:332
+msgid "Your license key is invalid."
+msgstr ""
+
+#. translators: 1: account page link start, 2: account page link end
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:276
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:276
+msgid "Invalid license key - please check your order confirmation email or %1$sAccount%2$s."
+msgstr ""
+
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:282
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:282
+msgid "No URL was supplied for activation, please contact support."
+msgstr ""
+
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:285
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:285
+msgid "License key mismatch, please contact support."
+msgstr ""
+
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:288
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:288
+msgid "This license is for a bundled product and cannot be activated."
+msgstr ""
+
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:292
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:292
+msgid "Your license key is not valid for this plugin."
+msgstr ""
+
+#. translators: %s: The number of sites the license is activated on
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:298
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:298
+msgid "%s site active"
+msgid_plural "%s sites active"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: The sites active description, e.g. '2 sites active'
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:301
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:301
+msgid "Your license key has reached its activation limit (%s)."
+msgstr ""
+
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:302
+#: dependencies/barn2/barn2-lib/src/Util.php:32
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:302
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Util.php:32
+msgid "Read more"
+msgstr ""
+
+#. translators: support for RTL, 1: the license error, 2: a link
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:304
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:322
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:304
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:322
+msgid "%1$s %2$s"
+msgstr ""
+
+#. translators: %s: The license expiry date
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:317
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:317
+msgid "Your license key expired on %s."
+msgstr ""
+
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:320
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:320
+msgid "Renew now for 20% discount."
+msgstr ""
+
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:523
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:523
+msgid "Your license key is not active. Please reactivate or save the settings."
+msgstr ""
+
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:527
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:527
+msgid "Your license key has expired."
+msgstr ""
+
+#. translators: 1: purchase link start, 2: purchase link end.
+#: dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:533
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Plugin/License/Plugin_License.php:533
+msgid "Your license key has been disabled. Please %1$spurchase a new license key%2$s to continue using the plugin."
+msgstr ""
+
+#. translators: %1$s: Plugin name. %2$s: Update Core <a> tag open. %3$s: <a> tag close. %4$s: WP Version required.
+#: dependencies/barn2/barn2-lib/src/Traits/Check_WP_Requirements.php:34
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Traits/Check_WP_Requirements.php:34
+msgid "The %1$s plugin requires WordPress %4$s or greater. Please %2$supdate%3$s your WordPress installation."
+msgstr ""
+
+#. translators: %1$s: Install WooCommerce <a> tag open. %2$s: <a> tag close. %3$s: Plugin name
+#: dependencies/barn2/barn2-lib/src/Traits/Check_WP_Requirements.php:62
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Traits/Check_WP_Requirements.php:62
+msgid "Please %1$sinstall WooCommerce%2$s in order to use %3$s."
+msgstr ""
+
+#. translators: %1$s: Plugin name. %2$s: Version required.
+#: dependencies/barn2/barn2-lib/src/Traits/Check_WP_Requirements.php:77
+#: dist/woocommerce-discount-manager/dependencies/barn2/barn2-lib/src/Traits/Check_WP_Requirements.php:77
+msgid "The %1$s plugin requires WooCommerce %2$s or greater. Please update your WooCommerce setup first."
+msgstr ""
+
+#: dependencies/barn2/settings-api/src/Rest_Api.php:131
+#: dist/woocommerce-discount-manager/dependencies/barn2/settings-api/src/Rest_Api.php:131
+msgid "Something went wrong. Please try again."
+msgstr ""
+
+#: dependencies/barn2/settings-api/src/Rest_Api.php:154
+#: dist/woocommerce-discount-manager/dependencies/barn2/settings-api/src/Rest_Api.php:154
+msgid "Something went wrong during validation. Please try again."
+msgstr ""
+
+#: dependencies/barn2/settings-api/src/Settings_Manager.php:248
+#: dist/woocommerce-discount-manager/dependencies/barn2/settings-api/src/Settings_Manager.php:248
+msgid "Page not found"
+msgstr ""
+
+#: dependencies/barn2/settings-api/src/Settings_Manager.php:248
+#: dist/woocommerce-discount-manager/dependencies/barn2/settings-api/src/Settings_Manager.php:248
+msgid "The page you are looking for does not exist."
+msgstr ""
+
+#: dependencies/barn2/settings-api/src/Settings_Manager.php:248
+#: dist/woocommerce-discount-manager/dependencies/barn2/settings-api/src/Settings_Manager.php:248
+msgid "Go back"
+msgstr ""
+
+#: dependencies/barn2/settings-api/src/Settings_Manager.php:248
+#: dist/woocommerce-discount-manager/dependencies/barn2/settings-api/src/Settings_Manager.php:248
+msgid "Save changes"
+msgstr ""
+
+#: dependencies/barn2/settings-api/src/Settings_Manager.php:248
+#: dist/woocommerce-discount-manager/dependencies/barn2/settings-api/src/Settings_Manager.php:248
+msgid "Your settings have been saved."
+msgstr ""
+
+#. translators: %s is the plugin name.
+#: dependencies/barn2/settings-api/src/Uninstall.php:48
+#: dist/woocommerce-discount-manager/dependencies/barn2/settings-api/src/Uninstall.php:48
+msgid "Uninstalling %s"
+msgstr ""
+
+#: dependencies/barn2/settings-api/src/Uninstall.php:49
+#: dist/woocommerce-discount-manager/dependencies/barn2/settings-api/src/Uninstall.php:49
+msgid "Delete data on uninstall"
+msgstr ""
+
+#: dependencies/barn2/settings-api/src/Uninstall.php:49
+#: dist/woocommerce-discount-manager/dependencies/barn2/settings-api/src/Uninstall.php:49
+msgid "Permanently delete all %s settings and data when uninstalling the plugin."
+msgstr ""
+
+#: dependencies/barn2/setup-wizard/src/Api.php:151
+#: dist/woocommerce-discount-manager/dependencies/barn2/setup-wizard/src/Api.php:151
+msgid "Could not find the appropriate step."
+msgstr ""
+
+#: dependencies/barn2/setup-wizard/src/Api.php:196
+#: dist/woocommerce-discount-manager/dependencies/barn2/setup-wizard/src/Api.php:196
+msgid "Please enter a license key."
+msgstr ""
+
+#: dependencies/barn2/setup-wizard/src/Api.php:199
+#: dist/woocommerce-discount-manager/dependencies/barn2/setup-wizard/src/Api.php:199
+msgid "Invalid action requested."
+msgstr ""
+
+#. translators: %s: The name of the plugin.
+#: dependencies/barn2/setup-wizard/src/Setup_Wizard.php:344
+#: dist/woocommerce-discount-manager/dependencies/barn2/setup-wizard/src/Setup_Wizard.php:344
+msgid "%s setup wizard"
+msgstr ""
+
+#: dependencies/barn2/setup-wizard/src/Setup_Wizard.php:434
+#: dependencies/barn2/setup-wizard/src/Setup_Wizard.php:507
+#: dist/woocommerce-discount-manager/dependencies/barn2/setup-wizard/src/Setup_Wizard.php:434
+#: dist/woocommerce-discount-manager/dependencies/barn2/setup-wizard/src/Setup_Wizard.php:507
+msgid "Warning: This will overwrite your existing settings for %s. Are you sure you want to continue?"
+msgstr ""
+
+#: dependencies/barn2/setup-wizard/src/Setup_Wizard.php:484
+#: dependencies/barn2/setup-wizard/src/Setup_Wizard.php:492
+#: dependencies/barn2/setup-wizard/src/Setup_Wizard.php:541
+#: dist/woocommerce-discount-manager/dependencies/barn2/setup-wizard/src/Setup_Wizard.php:484
+#: dist/woocommerce-discount-manager/dependencies/barn2/setup-wizard/src/Setup_Wizard.php:492
+#: dist/woocommerce-discount-manager/dependencies/barn2/setup-wizard/src/Setup_Wizard.php:541
+#: dist/woocommerce-discount-manager/src/Admin/Settings_Page.php:223
+#: src/Admin/Settings_Page.php:223
+msgid "Setup wizard"
+msgstr ""
+
+#: dependencies/barn2/setup-wizard/src/Setup_Wizard.php:487
+#: dist/woocommerce-discount-manager/dependencies/barn2/setup-wizard/src/Setup_Wizard.php:487
+msgid "If you need to access the setup wizard again, please click on the button below."
+msgstr ""
+
+#: dependencies/barn2/setup-wizard/src/Steps/Cross_Selling.php:23
+#: dist/woocommerce-discount-manager/dependencies/barn2/setup-wizard/src/Steps/Cross_Selling.php:23
+msgid "More"
+msgstr ""
+
+#: dependencies/barn2/setup-wizard/src/Steps/Cross_Selling.php:24
+#: dist/woocommerce-discount-manager/dependencies/barn2/setup-wizard/src/Steps/Cross_Selling.php:24
+#: dist/woocommerce-discount-manager/src/Admin/Wizard/Steps/Upsell.php:23
+#: src/Admin/Wizard/Steps/Upsell.php:23
+msgid "Extra features"
+msgstr ""
+
+#: dependencies/barn2/setup-wizard/src/Steps/Cross_Selling.php:25
+#: dist/woocommerce-discount-manager/dependencies/barn2/setup-wizard/src/Steps/Cross_Selling.php:25
+msgid "Enhance your site with these fantastic plugins from Barn2."
+msgstr ""
+
+#: dependencies/barn2/setup-wizard/src/Steps/Ready.php:23
+#: dist/woocommerce-discount-manager/dependencies/barn2/setup-wizard/src/Steps/Ready.php:23
+#: dist/woocommerce-discount-manager/src/Admin/Wizard/Steps/Completed.php:23
+#: src/Admin/Wizard/Steps/Completed.php:23
+msgid "Ready"
+msgstr ""
+
+#: dependencies/barn2/setup-wizard/src/Steps/Ready.php:24
+#: dist/woocommerce-discount-manager/dependencies/barn2/setup-wizard/src/Steps/Ready.php:24
+msgid "Setup Complete"
+msgstr ""
+
+#: dependencies/barn2/setup-wizard/src/Steps/Welcome.php:25
+#: dependencies/barn2/setup-wizard/src/Steps/Welcome_Free.php:24
+#: dist/woocommerce-discount-manager/dependencies/barn2/setup-wizard/src/Steps/Welcome.php:25
+#: dist/woocommerce-discount-manager/dependencies/barn2/setup-wizard/src/Steps/Welcome_Free.php:24
+#: dist/woocommerce-discount-manager/src/Admin/Wizard/Steps/License.php:23
+#: src/Admin/Wizard/Steps/License.php:23
+msgid "Welcome"
+msgstr ""
+
+#: dependencies/barn2/setup-wizard/src/Util.php:28
+#: dist/woocommerce-discount-manager/dependencies/barn2/setup-wizard/src/Util.php:28
+msgid "Select an option"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Settings_Controller.php:83
+#: dist/woocommerce-discount-manager/src/Admin/Settings_Controller.php:87
+#: src/Admin/Settings_Controller.php:83
+#: src/Admin/Settings_Controller.php:87
+msgid "Discount Manager"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Settings_Controller.php:88
+#: src/Admin/Settings_Controller.php:88
+msgid "The following options control the WooCommerce Discount Manager extension."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Settings_Page.php:137
+#: dist/woocommerce-discount-manager/src/Admin/Settings_Page.php:138
+#: dist/woocommerce-discount-manager/src/Admin/Settings_Tab/Discounts.php:40
+#: src/Admin/Settings_Page.php:137
+#: src/Admin/Settings_Page.php:138
+#: src/Admin/Settings_Tab/Discounts.php:40
+#: assets/js/admin/discounts-editor.js:23
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:23
+msgid "Discounts"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:114
+#: src/Admin/Validator.php:114
+msgid "Please assign a name to this discount."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:136
+#: src/Admin/Validator.php:136
+msgid "Please select which products this discount applies to."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:138
+#: src/Admin/Validator.php:138
+msgid "Please select at least one product."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:140
+#: src/Admin/Validator.php:140
+msgid "Please select at least one category."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:153
+#: src/Admin/Validator.php:153
+msgid "Please select what this discount applies to."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:160
+#: src/Admin/Validator.php:160
+msgid "Please select at least one user role."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:168
+#: src/Admin/Validator.php:168
+msgid "Please select at least one user."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:182
+#: src/Admin/Validator.php:182
+msgid "Please select when this discount is available."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:190
+#: src/Admin/Validator.php:190
+msgid "Please select a start date."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:194
+#: src/Admin/Validator.php:194
+msgid "Please select an end date."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:201
+#: src/Admin/Validator.php:201
+msgid "The start date must be before the end date."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:205
+#: src/Admin/Validator.php:205
+msgid "The start date and end date cannot be the same."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:221
+#: src/Admin/Validator.php:221
+msgid "Please select a valid discount type."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:253
+#: src/Admin/Validator.php:253
+msgid "Please select an amount type."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:257
+#: src/Admin/Validator.php:257
+msgid "Please select a valid amount type."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:275
+#: src/Admin/Validator.php:275
+msgid "Please enter a fixed discount amount."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:279
+#: src/Admin/Validator.php:279
+msgid "Please enter a valid fixed discount amount."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:283
+#: src/Admin/Validator.php:283
+msgid "Please enter a positive fixed discount amount."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:301
+#: src/Admin/Validator.php:301
+msgid "Please enter a percentage discount amount."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:305
+#: src/Admin/Validator.php:305
+msgid "Please enter a valid percentage discount amount."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:309
+#: src/Admin/Validator.php:309
+msgid "Please enter a positive percentage discount amount."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:313
+#: src/Admin/Validator.php:313
+msgid "Please enter a percentage discount amount less than 100."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:327
+#: src/Admin/Validator.php:327
+msgid "Please enter a total spend amount."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:331
+#: src/Admin/Validator.php:331
+msgid "Please enter a valid total spend amount."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:335
+#: src/Admin/Validator.php:335
+msgid "Please enter a positive total spend amount."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:349
+#: src/Admin/Validator.php:349
+msgid "Please enter a required quantity."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:353
+#: src/Admin/Validator.php:353
+msgid "Please enter a valid required quantity."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:357
+#: src/Admin/Validator.php:357
+msgid "Please enter a positive required quantity."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:371
+#: src/Admin/Validator.php:371
+msgid "Please enter a free quantity."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:375
+#: src/Admin/Validator.php:375
+msgid "Please enter a valid free quantity."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:379
+#: src/Admin/Validator.php:379
+msgid "Please enter a positive free quantity."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:397
+#: src/Admin/Validator.php:397
+msgid "Please select a free product."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:401
+#: src/Admin/Validator.php:401
+msgid "Please select a valid free product."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:415
+#: src/Admin/Validator.php:415
+msgid "Please enter a fixed price."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:419
+#: src/Admin/Validator.php:419
+msgid "Please enter a valid fixed price."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:423
+#: src/Admin/Validator.php:423
+msgid "Please enter a positive fixed price."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:442
+#: src/Admin/Validator.php:442
+msgid "Please select a apply option."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:446
+#: src/Admin/Validator.php:446
+msgid "Please select a valid apply option."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:464
+#: src/Admin/Validator.php:464
+msgid "Please select a range type."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:468
+#: src/Admin/Validator.php:468
+msgid "Please select a valid range type."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:482
+#: src/Admin/Validator.php:482
+msgid "Please enter at least one tier."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:486
+#: src/Admin/Validator.php:486
+msgid "Please enter a valid tier."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:507
+#: src/Admin/Validator.php:507
+msgid "Please enter a minimum quantity."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:511
+#: src/Admin/Validator.php:511
+msgid "Please enter a valid minimum quantity."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:515
+#: src/Admin/Validator.php:515
+msgid "Please enter a positive minimum quantity."
+msgstr ""
+
+#. Translators: %s is the zeroed price.
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:520
+#: src/Admin/Validator.php:520
+msgid "Please enter a discount greater than %s for all tiers."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:524
+#: src/Admin/Validator.php:524
+msgid "Please enter a valid discount amount."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:528
+#: src/Admin/Validator.php:528
+msgid "Please enter a positive discount amount."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:532
+#: src/Admin/Validator.php:532
+msgid "Please enter a valid quantity range."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:547
+#: src/Admin/Validator.php:547
+msgid "Please enter a value for the \"Number of additional products\" setting."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:551
+#: src/Admin/Validator.php:551
+msgid "Please enter a valid value for the \"Number of additional products\" setting."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Validator.php:555
+#: src/Admin/Validator.php:555
+msgid "Please enter a positive value for the \"Number of additional products\" setting."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Wizard/Setup_Wizard.php:59
+#: src/Admin/Wizard/Setup_Wizard.php:59
+msgid "Create discounts"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Wizard/Steps/Completed.php:24
+#: src/Admin/Wizard/Steps/Completed.php:24
+msgid "Complete Setup"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Wizard/Steps/Completed.php:34
+#: src/Admin/Wizard/Steps/Completed.php:34
+msgid "Congratulations, you have finished setting up the plugin. Now it’s time to start creating discounts."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Wizard/Steps/License.php:24
+#: src/Admin/Wizard/Steps/License.php:24
+msgid "Welcome to WooCommerce Discount Manager"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Wizard/Steps/License.php:25
+#: src/Admin/Wizard/Steps/License.php:25
+msgid "Start creating deals and discounts in no time"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Admin/Wizard/Steps/Upsell.php:24
+#: src/Admin/Wizard/Steps/Upsell.php:24
+msgid "Enhance your store with these fantastic plugins from Barn2."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Api/Routes/Discounts.php:103
+#: src/Api/Routes/Discounts.php:103
+msgid "An array of discount_id => menu_order data."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Api/Routes/Discounts.php:155
+#: src/Api/Routes/Discounts.php:155
+msgid "Something went wrong with reodering. No discounts have been found."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Api/Routes/Discounts.php:163
+#: src/Api/Routes/Discounts.php:163
+msgid "Something went wrong with reodering. Please try again later."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Api/Routes/Discounts.php:210
+#: src/Api/Routes/Discounts.php:210
+msgid "Could not update the status of the discount. Discount not found."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Api/Routes/Discounts.php:248
+#: dist/woocommerce-discount-manager/src/Api/Routes/Discounts.php:311
+#: src/Api/Routes/Discounts.php:248
+#: src/Api/Routes/Discounts.php:311
+msgid "Something went wrong: could not find the discount."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Api/Routes/Discounts.php:319
+#: src/Api/Routes/Discounts.php:319
+msgid "Copy"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Api/Routes/Discounts.php:372
+#: src/Api/Routes/Discounts.php:372
+msgid "Something went wrong: no discount was provided."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Api/Routes/Discounts.php:380
+#: src/Api/Routes/Discounts.php:380
+msgid "Something went wrong while updating the discount. No data was submitted."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Api/Routes/Discounts.php:386
+#: src/Api/Routes/Discounts.php:386
+msgid "No name"
+msgstr ""
+
+#. translators: %1$s: discount name, %2$s: error message
+#: dist/woocommerce-discount-manager/src/Api/Routes/Discounts.php:390
+#: src/Api/Routes/Discounts.php:390
+msgid "Something went wrong while updating the \"%1$s\" discount: %2$s"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Api/Routes/Discounts.php:406
+#: src/Api/Routes/Discounts.php:406
+msgid "Something went wrong while updating the discount. The discount was not found."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Cart.php:257
+#: dist/woocommerce-discount-manager/src/Integrations/Product_Options.php:202
+#: src/Cart.php:257
+#: src/Integrations/Product_Options.php:202
+msgid "Total savings"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Entities/Discount.php:985
+#: dist/woocommerce-discount-manager/src/Types/Buy_X_For_Y_Discount.php:82
+#: src/Entities/Discount.php:985
+#: src/Types/Buy_X_For_Y_Discount.php:82
+#: assets/js/admin/discounts-editor.js:16
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:16
+msgid "All products"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Entities/Discount.php:1005
+#: src/Entities/Discount.php:1005
+msgid "Products: "
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Entities/Discount.php:1010
+#: src/Entities/Discount.php:1010
+msgid "No products selected"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Entities/Discount.php:1030
+#: src/Entities/Discount.php:1030
+msgid "Categories: "
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Entities/Discount.php:1035
+#: src/Entities/Discount.php:1035
+msgid "No categories selected"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Entities/Discount.php:1054
+#: src/Entities/Discount.php:1054
+msgid "Roles: "
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Entities/Discount.php:1072
+#: src/Entities/Discount.php:1072
+msgid "Users: "
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Entities/Discount.php:1099
+#: src/Entities/Discount.php:1099
+msgid "Excludes products: "
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Entities/Discount.php:1115
+#: src/Entities/Discount.php:1115
+msgid "Excludes categories: "
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Entities/Discount.php:1125
+#: src/Entities/Discount.php:1125
+msgid "Dates: "
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Integrations/Product_Table.php:53
+#: dist/woocommerce-discount-manager/src/Orders.php:115
+#: dist/woocommerce-discount-manager/src/Types/Buy_X_For_Y_Discount.php:76
+#: dist/woocommerce-discount-manager/src/Types/Simple.php:74
+#: dist/woocommerce-discount-manager/src/Types/Total_Spend.php:68
+#: dist/woocommerce-discount-manager/templates/bulk-table.php:36
+#: src/Integrations/Product_Table.php:53
+#: src/Orders.php:115
+#: src/Types/Buy_X_For_Y_Discount.php:76
+#: src/Types/Simple.php:74
+#: src/Types/Total_Spend.php:68
+#: templates/bulk-table.php:36
+#: assets/js/admin/discounts-editor.js:17
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:17
+msgid "Discount"
+msgstr ""
+
+#. Translators: %s is a link to the settings page.
+#: dist/woocommerce-discount-manager/src/Integrations/Wholesale_Pro.php:405
+#: src/Integrations/Wholesale_Pro.php:405
+msgid "Set bulk and quantity-based discounts for your wholesale roles in the WooCommerce Discount Manager <a href=\"%s\">settings</a>."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Orders.php:111
+#: src/Orders.php:111
+msgid "Discounted"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Orders.php:119
+#: src/Orders.php:119
+msgid "Discounted Prices"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Orders.php:136
+#: src/Orders.php:136
+msgid "Yes"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Orders.php:136
+#: src/Orders.php:136
+msgid "No"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Orders.php:151
+#: src/Orders.php:151
+msgid "Discount no longer exists"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Orders.php:213
+#: src/Orders.php:213
+msgid "Discounts Total"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Orders.php:240
+#: src/Orders.php:240
+msgid "Calculate discount"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Orders.php:632
+#: src/Orders.php:632
+msgid "Total savings:"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Bulk.php:40
+#: src/Types/Bulk.php:40
+msgid "Bulk pricing"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Bulk.php:50
+#: src/Types/Bulk.php:50
+msgid "Buy 5-9 products and get 10% discount; buy 10+ products and get 20% discount"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Bulk.php:51
+#: src/Types/Bulk.php:51
+msgid "Buy 5-9 products and get $10 off each product; buy 10+ products and get $20 discount off each product"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Bulk.php:53
+#: src/Types/Bulk.php:53
+msgid "Set up quantity-based discounts with one or more pricing tiers."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Bulk.php:66
+#: src/Types/Bulk.php:66
+msgid "Calculated based on total cart contents, or individual products?"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Bulk.php:68
+#: src/Types/Bulk.php:68
+msgid "Individual products"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Bulk.php:69
+#: src/Types/Bulk.php:69
+msgid "Entire cart"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Bulk.php:74
+#: src/Types/Bulk.php:74
+msgid "Range type"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Bulk.php:76
+#: src/Types/Bulk.php:76
+msgid "% based"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Bulk.php:77
+#: src/Types/Bulk.php:77
+msgid "Price based"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Bulk.php:82
+#: src/Types/Bulk.php:82
+msgid "Bulk pricing tiers"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Buy_X_For_Y_Discount.php:46
+#: src/Types/Buy_X_For_Y_Discount.php:46
+msgid "Buy X products for Y discount"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Buy_X_For_Y_Discount.php:56
+#: src/Types/Buy_X_For_Y_Discount.php:56
+msgid "Buy 5 products and get 10% off"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Buy_X_For_Y_Discount.php:57
+#: src/Types/Buy_X_For_Y_Discount.php:57
+msgid "Buy 4 t-shirts and get $5 off"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Buy_X_For_Y_Discount.php:59
+#: src/Types/Buy_X_For_Y_Discount.php:59
+msgid "Give a percentage or fixed discount when the customer buys a certain quantity."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Buy_X_For_Y_Discount.php:71
+#: dist/woocommerce-discount-manager/src/Types/Buy_X_For_Y_Fixed.php:69
+#: src/Types/Buy_X_For_Y_Discount.php:71
+#: src/Types/Buy_X_For_Y_Fixed.php:69
+msgid "Quantity required for discount"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Buy_X_For_Y_Discount.php:80
+#: src/Types/Buy_X_For_Y_Discount.php:80
+msgid "Apply to all products or additional products above the required quantity?"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Buy_X_For_Y_Discount.php:83
+#: src/Types/Buy_X_For_Y_Discount.php:83
+msgid "Additional products only"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Buy_X_For_Y_Discount.php:88
+#: src/Types/Buy_X_For_Y_Discount.php:88
+msgid "Number of additional products"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Buy_X_For_Y_Fixed.php:43
+#: src/Types/Buy_X_For_Y_Fixed.php:43
+msgid "Buy X products for a fixed price"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Buy_X_For_Y_Fixed.php:53
+#: src/Types/Buy_X_For_Y_Fixed.php:53
+msgid "Any 10 products for $100"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Buy_X_For_Y_Fixed.php:54
+#: src/Types/Buy_X_For_Y_Fixed.php:54
+msgid "2 t-shirts for $25"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Buy_X_For_Y_Fixed.php:55
+#: src/Types/Buy_X_For_Y_Fixed.php:55
+msgid "5 of the ‘Barn2 Hoodie’ product for $150"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Buy_X_For_Y_Fixed.php:57
+#: src/Types/Buy_X_For_Y_Fixed.php:57
+msgid "Charge a fixed price for buying multiple quantities."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Buy_X_For_Y_Fixed.php:74
+#: src/Types/Buy_X_For_Y_Fixed.php:74
+msgid "Fixed price"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Free_Products.php:43
+#: src/Types/Free_Products.php:43
+msgid "Free products"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Free_Products.php:53
+#: src/Types/Free_Products.php:53
+msgid "BOGO (buy 1 get 1 free)"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Free_Products.php:54
+#: src/Types/Free_Products.php:54
+msgid "3 for the price of 2"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Free_Products.php:55
+#: src/Types/Free_Products.php:55
+msgid "Buy 4 get 1 free"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Free_Products.php:57
+#: src/Types/Free_Products.php:57
+msgid "Give away one or more products. The cheapest qualifying product will always be used as the free product."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Free_Products.php:69
+#: src/Types/Free_Products.php:69
+msgid "Number of paid products required"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Free_Products.php:74
+#: src/Types/Free_Products.php:74
+msgid "Number of free products given"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Free_Products.php:79
+#: src/Types/Free_Products.php:79
+msgid "How should the discount be applied?"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Free_Products.php:81
+#: src/Types/Free_Products.php:81
+msgid "Like for like product only"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Free_Products.php:82
+#: src/Types/Free_Products.php:82
+msgid "Any product selected above"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Simple.php:39
+#: src/Types/Simple.php:39
+msgid "Simple"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Simple.php:58
+#: src/Types/Simple.php:58
+msgid "10% off everything"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Simple.php:59
+#: src/Types/Simple.php:59
+msgid "$5 off all t-shirts"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Simple.php:60
+#: src/Types/Simple.php:60
+msgid "20% off \"Barn2 Hoodie\""
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Simple.php:62
+#: src/Types/Simple.php:62
+msgid "Create either a percentage or fixed discount."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Simple.php:78
+#: src/Types/Simple.php:78
+msgid "Sale badge"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Simple.php:79
+#: src/Types/Simple.php:79
+msgid "Display a sale badge on products eligible for this discount"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Total_Spend.php:39
+#: src/Types/Total_Spend.php:39
+msgid "Based on total spend"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Total_Spend.php:49
+#: src/Types/Total_Spend.php:49
+msgid "10% off if you spend over $100"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Total_Spend.php:50
+#: src/Types/Total_Spend.php:50
+msgid "$5 off t-shirts when you spend $100 in that category"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Total_Spend.php:52
+#: src/Types/Total_Spend.php:52
+msgid "Give a discount based on the amount spent."
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Types/Total_Spend.php:64
+#: src/Types/Total_Spend.php:64
+msgid "Total spend required for discount"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Util.php:55
+#: dist/woocommerce-discount-manager/src/Util.php:75
+#: src/Util.php:55
+#: src/Util.php:75
+msgid "Guest"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Util.php:307
+#: src/Util.php:307
+msgid "Before product page content"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Util.php:308
+#: src/Util.php:308
+msgid "Before product title"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Util.php:309
+#: src/Util.php:309
+msgid "Before short description"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Util.php:310
+#: src/Util.php:310
+msgid "Before add to cart button"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Util.php:311
+#: src/Util.php:311
+msgid "Before product meta information"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/src/Util.php:312
+#: src/Util.php:312
+msgid "Before product tabs"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/templates/bulk-table.php:34
+#: templates/bulk-table.php:34
+msgid "Quantity"
+msgstr ""
+
+#: dist/woocommerce-discount-manager/templates/bulk-table.php:35
+#: templates/bulk-table.php:35
+msgid "Price per item"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:1
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:1
+msgid "Route not found."
+msgstr ""
+
+#. translators: comma as in the character ','
+#. translators: period as in the character '.'
+#. translators: backtick as in the character '`'
+#: assets/js/admin/discounts-editor.js:8
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:8
+msgid "There was a problem fetching your suggestions"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:8
+#: assets/js/admin/discounts-editor.js:17
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:8
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:17
+msgid "There was a problem fetching your items"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:8
+#: assets/js/admin/discounts-editor.js:10
+#: assets/js/admin/discounts-editor.js:12
+#: assets/js/admin/discounts-editor.js:14
+#: assets/js/admin/discounts-editor.js:17
+#: assets/js/admin/discounts-editor.js:19
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:8
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:10
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:12
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:14
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:17
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:19
+msgid "Clear all"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:8
+#: assets/js/admin/discounts-editor.js:17
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:8
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:17
+msgid "No items found"
+msgstr ""
+
+#. translators: %s: product select search query
+#: assets/js/admin/discounts-editor.js:10
+#: assets/js/admin/discounts-editor.js:19
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:10
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:19
+msgctxt "items"
+msgid "No results for %s"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:10
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:10
+msgid "Search for items"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:10
+#: assets/js/admin/discounts-editor.js:19
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:10
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:19
+msgid "Selected items"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:10
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:10
+msgid "No categories found"
+msgstr ""
+
+#. translators: %s: product select search query
+#: assets/js/admin/discounts-editor.js:12
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:12
+msgctxt "categories"
+msgid "No results for %s"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:12
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:12
+msgid "Search for categories"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:12
+#: assets/js/admin/discounts-editor.js:16
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:12
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:16
+msgid "Selected categories"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:12
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:12
+msgid "Excluded categories"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:12
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:12
+msgid "No products found"
+msgstr ""
+
+#. translators: %s: product select search query
+#: assets/js/admin/discounts-editor.js:14
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:14
+msgctxt "products"
+msgid "No results for %s"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:14
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:14
+msgid "Search for products"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:14
+#: assets/js/admin/discounts-editor.js:16
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:14
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:16
+msgid "Selected products"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:14
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:14
+msgid "Excluded products"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:14
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:14
+msgid "No users found"
+msgstr ""
+
+#. translators: %s: product select search query
+#: assets/js/admin/discounts-editor.js:16
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:16
+msgctxt "users"
+msgid "No results for %s"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:16
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:16
+msgid "Search for users"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:16
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:16
+msgid "Selected users"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:16
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:16
+msgid "Percentage discount"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:16
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:16
+msgid "Fixed discount"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:16
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:16
+msgid "Everyone"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:16
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:16
+msgid "Selected roles"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:16
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:16
+msgid "Always available"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:16
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:16
+msgid "Specific dates"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:16
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:16
+msgid "There was an issue while retrieving the discounts. Please try again later or check your server logs."
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:16
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:16
+msgid "There was an issue while saving your new rules order. Please try again."
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:16
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:16
+msgid "There was an issue while updating the status of the discount rule. Please try again later."
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:16
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:16
+msgid "There was an issue while creating the discount. Please try again."
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:16
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:16
+msgid "There was an issue while updating the row. Please reload the page."
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:16
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:16
+msgid "Add new discount"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:16
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:16
+msgid "Your discounts will be listed here."
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:16
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:16
+msgid "Create your first discount"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:16
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:16
+msgid "(No name)"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:16
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:16
+msgid "Delete discount"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:16
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:16
+msgid "Are you sure you want to delete the discount?"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:16
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:16
+msgid "Are you sure you want to delete the \"%s\" discount?"
+msgstr ""
+
+#. translators: %s: discount name
+#: assets/js/admin/discounts-editor.js:17
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:17
+msgid "Discount \"%s\" deleted."
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:17
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:17
+msgid "Discount deleted."
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:17
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:17
+msgid "There was an issue while deleting the discount. Please try again."
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:17
+#: assets/js/admin/discounts-editor.js:23
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:17
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:23
+msgid "Delete"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:17
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:17
+msgid "Delete tier"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:17
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:17
+msgid "Are you sure you want to delete the tier?"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:17
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:17
+msgid "Minimum quantity"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:17
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:17
+msgid "Maximum quantity"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:17
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:17
+msgid "Add tier"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:17
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:17
+msgid "Display table of pricing tiers on product page"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:17
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:17
+msgid "No input found for this setting"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:17
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:17
+msgid "Select one or more user roles"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:19
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:19
+msgid "No variations found"
+msgstr ""
+
+#. translators: %s: product select search query
+#: assets/js/admin/discounts-editor.js:21
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:21
+msgctxt "variations"
+msgid "No results for %s"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:21
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:21
+msgid "Selected variations"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:21
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:21
+msgid "Search for variations"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:21
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:21
+msgid "There was a problem fetching your products"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:21
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:21
+msgid "Select specific variations"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:21
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:21
+msgid "The discounts will be used for all variations by default. Alternatively, you can select specific variations only."
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:21
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:21
+msgid "Product"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:21
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:21
+msgid "Variation"
+msgstr ""
+
+#. translators: %s: discount name
+#: assets/js/admin/discounts-editor.js:22
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:22
+msgid "Discount \"%s\" updated."
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:22
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:22
+msgid "Discount name"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:22
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:22
+msgid "Enter a name for the discount."
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:22
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:22
+msgid "The discount must be given a name."
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:22
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:22
+msgid "Discount type"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:22
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:22
+msgid "Which products?"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:22
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:22
+msgid "Choose whether to apply the discount to all products, or specific products or categories. If you choose All Products then you can exclude specific products or categories if required."
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:22
+#: assets/js/admin/discounts-editor.js:23
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:22
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:23
+msgid "Applies to"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:22
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:22
+msgid "Exclusions"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:22
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:22
+msgid "Availability"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:22
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:22
+msgid "Either make the discount available for as long as it is set to ‘Active’, or enter a specific start and end date. Discounts start and end at midnight on the selected date."
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:22
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:22
+msgid "Start date"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:22
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:22
+msgid "End date"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:22
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:22
+msgid "Product page content"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:22
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:22
+msgid "Optionally add details of the discount which will be displayed above the ‘Add to cart’ button on products that are eligible for the discount."
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:22
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:22
+msgid "Enter any text about the discount that you would like to display on the product page. You can add images, shortcodes, HTML code etc to make it stand out."
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:22
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:22
+msgid "Content location"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:22
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:22
+msgid "Cart notice"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:22
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:22
+msgid "Optionally add a notice which will be displayed above the cart when the discount is applied."
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:22
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:22
+msgid "Save"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:22
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:22
+msgid "If more than one discount applies, the priority determines which discount to use. Only one discount rule can be applied to each product."
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:22
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:22
+msgid "Priority"
+msgstr ""
+
+#. translators: %1$s: source discount name, %2$s: cloned discount name
+#: assets/js/admin/discounts-editor.js:23
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:23
+msgid "Discount \"%1$s\" duplicated as \"%2$s\"."
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:23
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:23
+msgid "Name"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:23
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:23
+msgid "Type"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:23
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:23
+msgid "Enabled"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:23
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:23
+msgid "ID: %s"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:23
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:23
+msgid "Close"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:23
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:23
+msgid "Edit"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:23
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:23
+msgid "Duplicate"
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:23
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:23
+msgid "Discounts successfully updated."
+msgstr ""
+
+#: assets/js/admin/discounts-editor.js:23
+#: dist/woocommerce-discount-manager/assets/js/admin/discounts-editor.js:23
+msgid "Add New"
+msgstr ""

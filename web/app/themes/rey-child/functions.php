@@ -28,3 +28,13 @@ add_action( "rey/before_footer", function(){
         echo do_shortcode('[rey_global_section id="1374"]');
     }
 });
+
+// Adds the currency switcher in the header
+// add_action('woocommerce_after_add_to_cart_button', function(){
+//     if( class_exists('WooCommerce') && is_product() ){
+//         if( ! ($product = wc_get_product()) ){
+//             return;
+//         }
+//         echo do_shortcode('[tiered-pricing-table]');
+//     }
+// }, 0);

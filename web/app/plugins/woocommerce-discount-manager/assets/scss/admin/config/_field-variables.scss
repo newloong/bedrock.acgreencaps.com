@@ -1,0 +1,25 @@
+$focus-color: rgb(8, 158, 199);
+$background-color: rgb(255, 255, 255);
+$border-color: rgb(238, 238, 238);
+$border-color-alt: rgb(225, 223, 223);
+$border-radius: 4px;
+$error-red-color: #cc0000;
+$input-font-size: 15px;
+$group-name-font-size: 1.3em;
+$option-name-font-size: 1.1em;
+$option-price-font-size: 12px;
+$description-font-size: 13px;
+
+.wpo-options-container {
+    --wpo-input-focus-color: #{$focus-color};
+    --wpo-input-border-radius: #{$border-radius};
+    --wpo-input-border-color: #{$border-color};
+    --wpo-input-border-color-alt: #{$border-color-alt};
+    --wpo-input-background-color: #{$background-color};
+    --wpo-input-error-color: #{$error-red-color};
+    --wpo-input-font-size: #{$input-font-size};
+    --wpo-description-font-size: #{$description-font-size};
+    --wpo-group-name-font-size: #{$group-name-font-size};
+    --wpo-option-name-font-size: #{$option-name-font-size};
+    --wpo-option-price-font-size: #{$option-price-font-size};
+}

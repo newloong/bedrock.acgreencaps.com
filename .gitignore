@@ -31,4 +31,5 @@ wp-cli.local.yml
 
 !web/app/plugins/elementor-pro
 !web/app/plugins/rey-core
+!web/app/plugins/woocommerce-discount-manager
 
