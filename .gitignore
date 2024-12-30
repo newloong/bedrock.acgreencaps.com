@@ -29,7 +29,10 @@ wp-cli.local.yml
 # SQL
 *.sql
 
+!screenshot.png
+
 !web/app/plugins/elementor-pro
 !web/app/plugins/rey-core
 !web/app/plugins/woocommerce-discount-manager
+!web/app/plugins/woocommerce-social-login
 

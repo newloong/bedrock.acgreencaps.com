@@ -41,13 +41,24 @@
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.2.0",
     "wpackagist-theme/twentytwentyfive": "^1.0",
-    "wpackagist-plugin/elementor":"^3.25",
-    "wpackagist-plugin/woocommerce":"9.4.3",
-    "wpackagist-plugin/safe-svg":"2.2.5",
-    "wpackagist-plugin/mailchimp-for-wp":"4.9.19",
-    "wpackagist-plugin/duplicate-post":"4.5",
+    "wpackagist-plugin/elementor":"^3.26.3",
+    "wpackagist-plugin/woocommerce":"^9.4.3",
+    "wpackagist-plugin/safe-svg":"^2.2.5",
+    "wpackagist-plugin/mailchimp-for-wp":"^4.9.19",
+    "wpackagist-plugin/duplicate-post":"^4.5",
     "wpackagist-plugin/post-type-switcher": "^3.3",
-    "wpackagist-plugin/instagram-feed": "^6.6"
+    "wpackagist-plugin/simple-history": "^5.0",
+    "wpackagist-plugin/simple-custom-post-order":"^2.5.10",
+    "wpackagist-plugin/two-factor": "^0.10.0",
+    "wpackagist-plugin/woocommerce-paypal-payments": "^2.9.5",
+    "wpackagist-plugin/seo-by-rank-math": "^1.0",
+    "piotrpress/wpml-composer": "^0.2.0",
+    "wpml/sitepress-multilingual-cms": "*",
+    "wpml/wpml-string-translation": "*",
+    "wpml/woocommerce-multilingual": "*",
+    "wpml/wpml-mailchimp-for-wp": "*",
+    "wpml/wp-seo-multilingual": "*",
+    "wpml/acfml": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.7.1",
@@ -58,7 +69,8 @@
     "preferred-install": "dist",
     "allow-plugins": {
       "composer/installers": true,
-      "roots/wordpress-core-installer": true
+      "roots/wordpress-core-installer": true,
+      "piotrpress/wpml-composer": true
     }
   },
   "minimum-stability": "dev",

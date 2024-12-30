@@ -5,8 +5,170 @@
  * Author: newloong.com
  * Author URI:  https://newloong.com
  * Template: rey
- * Version: 1.0.0
+ * Version: 1.0.1
  * License: General Public License
  * License URI: http://www.gnu.org/licenses/gpl.html
  * Text Domain: rey-child
  */
+
+/**
+:root {
+
+
+
+    --skin-cards-border-size: 1px;
+    --skin-cards-border-radius: 14px;
+    --skin-cards-border-size-hover: 6px;
+    --loop-footer-item-atc-width: 100%;
+    --lp-ov: hidden;
+
+
+    --pdp-linked-title-fw: 500;
+    --pdp-linked-title-color: var(--e-global-color-d7b32bd);
+    --pdp-linked-title-tt: none;
+    --pdp-linked-title-mb: 0.7em;
+    --pdp-linked-title-fz: 28px;
+    --woocommerce-form-comp-heights: 60px;
+
+
+    --cart-panel-radius: 50px;
+}
+
+.rey-cartBtnQty {
+    --pdp-qty-separator-display: none;
+    --inline-distance: 10px;
+    --qty-basic-br: 2rem;
+    --pdp-btn-br: 2rem;
+}
+
+.woocommerce-product-gallery {
+    --pdp-gallery-wrapper-border: 1px solid var(--e-global-color-0800f61);
+    --pdp-gallery-wrapper-border-radius: 14px;
+    --thumbs-radius: 100%;
+}
+*/
+
+.wpml-ls-legacy-list-horizontal {
+    padding: 0;
+
+    a:first-child {
+        padding-left: 0;
+    }
+}
+
+.rey-mainNavigation--desktop .--megamenu-support .elementor-image-box-wrapper,
+.rey-mainNavigation--desktop .--megamenu-support .has-post-thumbnail {
+    display: flex;
+
+    img {
+        aspect-ratio: 3/2;
+    }
+
+    .elementor-image-box-description,
+    .elementor-post__excerpt p {
+        width: 258px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        line-height: 27px;
+        max-height: 81px;
+        line-clamp: 3;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+}
+
+.rey-mainNavigation--desktop .--megamenu-support .elementor-image-box-wrapper {
+    column-gap: 20px;
+}
+
+.rey-summaryAcc-accItem {
+    font-size: 1.125rem;
+}
+
+.rey-pBadge {
+    border: 1px solid #000 !important;
+    border-radius: 100px;
+    padding: 3px 7px;
+}
+
+.rey-pBadge span {
+    background: transparent !important;
+}
+
+/*
+.post-type-archive-product .rey-productInner, .tax-product_cat .rey-productInner {
+	border-style: solid;
+  border-width: 1px;
+  border-radius: 20px;
+  padding: 5px;
+  border-color: transparent;
+}
+.post-type-archive-product .rey-productInner:hover, .tax-product_cat .rey-productInner:hover {
+  border-color: #ccc;
+}*/
+
+.wdm-bulk-table {
+
+    th:last-child,
+    td:last-child {
+        display: none;
+    }
+}
+
+/* Variations styles */
+.rey-swatchList .rey-swatchList-item--regular {
+    --item-border-size: 1px;
+    --item-selected-color: #fff;
+    --item-bg-selected-color: #000;
+    --item-border-size-selected: 0px;
+}
+
+/* PLP - Sider Bar */
+.rey-filterList.rey-filterList--color ul li {
+    border-radius: 100px;
+
+    a {
+        border-radius: 100px;
+    }
+}
+
+/* PDP - Cart form */
+.rey-cartBtnQty {
+    --pdp-qty-separator-display: none;
+    --inline-distance: 10px;
+    --qty-basic-br: 2rem;
+    --pdp-btn-br: 2rem;
+}
+
+.horizontal-list {
+    display: flex;
+    justify-content: start;
+
+    ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        margin: 0 20px 0 0;
+    }
+}
+
+.key-value-pairs {
+    dl {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 0 5px;
+    }
+
+    dt {
+        width: 30%;
+    }
+
+    dd {
+        margin-left: auto;
+        width: 70%;
+    }
+}
