@@ -2,9 +2,9 @@
 Contributors: barn2media
 Tags: woocommerce, product, discount, coupons, pricing
 Requires at least: 6.1
-Tested up to: 6.6.2
+Tested up to: 6.7.1
 Requires PHP: 7.4
-Stable tag: 1.2.2
+Stable tag: 1.2.4
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -25,6 +25,25 @@ Add advanced pricing rules and discounts to WooCommerce.
 Please refer to [the documentation](https://barn2.com/kb-categories/discount-manager-kb/).
 
 == Changelog ==
+
+= 1.2.4 =
+Release date 17 December 2024
+
+ * Fix: Unable to switch shipping method when the "Free shipping" method has a threshold and the cart total hasn't reached it.
+ * Fix: "Total spend" discount type not tracking discounted products correctly when variable products are involved.
+ * Tweak: Added new filter to preserve shipping methods during cart calculations.
+ * Dev: Tested up to WooCommerce 9.4.3
+ * Dev: Updated internal dependencies.
+
+= 1.2.3 =
+Release date 03 December 2024
+
+ * Fix: An issue where the "Buy X products for Y discount" discount type was not working correctly due to mismatched caching priorities.
+ * Fix: Minor design glitch in the "Add discount" modal in WordPress 6.7.
+ * Fix: Translation compatibility issue with WordPress 6.7.
+ * Dev: Tested up to WordPress 6.7.1
+ * Dev: Tested up to WooCommerce 9.4.2
+ * Dev: Updated internal dependencies.
 
 = 1.2.2 =
 Release date 11 November 2024

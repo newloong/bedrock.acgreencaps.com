@@ -225,89 +225,47 @@ class Buy_X_For_Y_Discount extends Type implements Actionable, Applicable {
 		}
 
 		$original_subtotal = $order ? $this->get_order_subtotal( $order ) : $this->get_cart_subtotal( $cart );
+		$min_required_qty  = $this->get_min_required_qty();
+		$total_qty         = 0;
 
-		// Define a products array as an associative array with product IDs as keys, and quantities and prices as values.
-		$products = [];
-
-		foreach ( $items as $cart_item_key => $cart_item ) {
-			$product_id = $order ? $cart_item->get_product_id() : $cart_item['product_id'];
-			$quantity   = $order ? $cart_item->get_quantity() : $cart_item['quantity'];
-			$price      = $order ? $cart_item->get_total() : $cart_item['line_total'];
-
-			// Handle variations
-			if ( $order && $cart_item->get_product_type() === 'variation' ) {
-				$product_id = $cart_item->get_variation_id();
-			} elseif ( $cart && $cart_item['variation_id'] ) {
-				$product_id = $cart_item['variation_id'];
-			}
-
-			// Merge taxes with the original subtotal.
-			if ( Util::prices_include_tax() ) {
-				if ( $order ) {
-					$price += $cart_item->get_total_tax();
-				} else {
-					$price += $cart_item['line_tax'];
-				}
-			}
-
-			$price /= $quantity;
-
-			if ( ! isset( $products[ $product_id ] ) ) {
-				$products[ $product_id ] = [
-					'quantity' => 0,
-					'price'    => 0,
-				];
-			}
-
-			$products[ $product_id ]['quantity'] += $quantity;
-			$products[ $product_id ]['price']    += $price;
+		// Calculate total quantity across all items
+		foreach ( $items as $item ) {
+			$total_qty += $order ? $item->get_quantity() : $item['quantity'];
 		}
 
-		$min_required_qty = $this->get_min_required_qty();
-		$discount_type    = $this->get_discount_amount_type();
-		$discount_value   = $this->get_reduction()->get_amount();
+		// Calculate how many times the discount should be applied
+		$discount_applications = floor( $total_qty / $min_required_qty );
 
-		$total_discounted_amount = 0;
-
-		foreach ( $products as $product_id => $product ) {
-			$product_price    = $product['price'];
-			$product_quantity = $product['quantity'];
-
-			$discount_apply_count = floor( $product_quantity / $min_required_qty );
-			$discounted_quantity  = $discount_apply_count * $min_required_qty;
-			$regular_quantity     = $product_quantity - $discounted_quantity;
-
-			$discounted_subtotal = $product_price * $discounted_quantity;
-			$regular_subtotal    = $product_price * $regular_quantity;
-
-			if ( $discount_type === 'percentage' && $discount_value > 0 && $discount_value <= 100 ) {
-				$discount_amount = $discounted_subtotal * ( $discount_value / 100 );
-			} elseif ( $discount_type === 'fixed' && $discount_value > 0 ) {
-				$discount_amount = $discount_apply_count * $discount_value;
-			} else {
-				$discount_amount = 0;
-			}
-
-			$total_discounted_amount += $discount_amount;
-		}
-
-		$fixed_price         = $original_subtotal - $total_discounted_amount;
-		$percentage_discount = ( $total_discounted_amount / $original_subtotal ) * 100;
-
-		if ( $fixed_price < 0 ) {
-			$fixed_price = 0;
-		}
-
-		if ( $fixed_price > $original_subtotal ) {
+		if ( $discount_applications < 1 ) {
 			return;
 		}
+
+		// Calculate total discount amount
+		$discount_type  = $this->get_discount_amount_type();
+		$discount_value = $this->get_reduction()->get_amount();
+		$total_discount = 0;
+
+		if ( $discount_type === 'percentage' && $discount_value > 0 && $discount_value <= 100 ) {
+			$total_discount = round( $original_subtotal * ( $discount_value / 100 ) * $discount_applications, 2 );
+		} elseif ( $discount_type === 'fixed' && $discount_value > 0 ) {
+			$total_discount = round( $discount_value * $discount_applications, 2 );
+		}
+
+		// Ensure discount doesn't exceed original subtotal
+		if ( $total_discount >= $original_subtotal ) {
+			$total_discount = $original_subtotal;
+		}
+
+		// Calculate percentage discount for the entire cart/order
+		// Round to 4 decimal places for more precise percentage calculation
+		$percentage_discount = round( ( $total_discount / $original_subtotal ) * 100, 4 );
 
 		if ( $percentage_discount <= 0 ) {
 			return;
 		}
 
 		if ( $this->is_processing_order() && $order ) {
-			$this->increase_total_order_discount( $total_discounted_amount );
+			$this->increase_total_order_discount( $total_discount );
 		} else {
 			$reduction = new Percentage( $percentage_discount, null, $this->get_discount() );
 

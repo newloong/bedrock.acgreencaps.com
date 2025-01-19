@@ -26,6 +26,7 @@ class Cart implements Registerable {
 		add_action( 'woocommerce_cart_totals_before_order_total', [ $this, 'show_total_discount_cart_checkout' ], 9999 );
 		add_action( 'woocommerce_review_order_before_order_total', [ $this, 'show_total_discount_cart_checkout' ], 9999 );
 		add_action( 'woocommerce_before_cart', [ $this, 'display_cart_notice' ] );
+		add_action( 'woocommerce_before_calculate_totals', [ $this, 'preserve_shipping_methods' ], 5 );
 	}
 
 	/**
@@ -383,5 +384,59 @@ class Cart implements Registerable {
 		}
 
 		return $products_in_categories;
+	}
+
+	/**
+	 * Preserves the chosen shipping methods during cart calculations
+	 * to prevent them from being reset. This is needed because WooCommerce
+	 * sometimes resets shipping methods when recalculating cart totals,
+	 * which can cause issues with shipping costs and available methods.
+	 *
+	 * This method stores the currently chosen shipping methods before calculations
+	 * and restores them afterwards if they have changed.
+	 *
+	 * @return void
+	 */
+	public function preserve_shipping_methods(): void {
+		/**
+		 * Filter to determine if the shipping methods should be preserved.
+		 *
+		 * @param bool $should_preserve Whether the shipping methods should be preserved.
+		 * @return bool
+		 */
+		$should_preserve = apply_filters( 'wdm_preserve_shipping_methods', true );
+
+		if ( ! $should_preserve ) {
+			return;
+		}
+
+		if ( ! isset( WC()->session ) ) {
+			return;
+		}
+
+		$chosen_methods = WC()->session->get( 'chosen_shipping_methods' );
+
+		if ( empty( $chosen_methods ) ) {
+			return;
+		}
+
+		add_action(
+			'woocommerce_after_calculate_totals',
+			function () use ( $chosen_methods ) {
+				$current_methods = WC()->session->get( 'chosen_shipping_methods' );
+
+				if ( $current_methods !== $chosen_methods ) {
+					WC()->session->set( 'chosen_shipping_methods', $chosen_methods );
+
+					$packages      = WC()->shipping()->get_packages();
+					$method_counts = [];
+					foreach ( $packages as $key => $package ) {
+						$method_counts[ $key ] = count( $package['rates'] );
+					}
+					WC()->session->set( 'shipping_method_counts', $method_counts );
+				}
+			},
+			10
+		);
 	}
 }

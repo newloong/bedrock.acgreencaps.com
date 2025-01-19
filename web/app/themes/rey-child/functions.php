@@ -1,5 +1,5 @@
 <?php
-if ( ! defined('ABSPATH')) exit; // Exit if accessed directly
+if (! defined('ABSPATH')) exit; // Exit if accessed directly
 
 /**
  * Theme child functions and definitions.
@@ -13,21 +13,37 @@ if ( ! defined('ABSPATH')) exit; // Exit if accessed directly
  *
  * @link https://developer.wordpress.org/themes/advanced-topics/child-themes/
  *
-*/
+ */
 
 // Hook into Scripts to append custom stylesheet
-add_action( 'wp_enqueue_scripts', function () {
+add_action('wp_enqueue_scripts', function () {
 
-	// Load custom stylesheet
-	wp_enqueue_style( 'rey-wp-style-child', get_stylesheet_uri(), [], wp_get_theme()->get('Version') );
+    // Load custom stylesheet
+    wp_enqueue_style('rey-wp-style-child', get_stylesheet_uri(), [], wp_get_theme()->get('Version'));
+}, PHP_INT_MAX /* load late */);
 
-}, PHP_INT_MAX /* load late */ );
-
-add_action( "rey/before_footer", function(){
-    if( class_exists('WooCommerce') && is_product() ){
+add_action("rey/before_footer", function () {
+    if (class_exists('WooCommerce') && is_product()) {
         echo do_shortcode('[rey_global_section id="1374"]');
     }
 });
+
+/**
+ * Allow HTML in the category name field
+ */
+foreach (array('pre_term_name') as $filter) {
+    remove_filter($filter, 'sanitize_text_field');
+    remove_filter($filter, 'wp_filter_kses');
+    remove_filter($filter, '_wp_specialchars', 30);
+}
+
+/**
+ * @snippet       WooCommerce Holiday / Pause Mode
+ * @testedwith    WooCommerce 8
+ * @community     https://newloong.com
+ */
+
+add_filter('woocommerce_is_purchasable', '__return_false');
 
 // // Register Modified Date Column for both posts & pages
 // function modified_column_register( $columns ) {

@@ -58,7 +58,8 @@
     "wpml/woocommerce-multilingual": "*",
     "wpml/wpml-mailchimp-for-wp": "*",
     "wpml/wp-seo-multilingual": "*",
-    "wpml/acfml": "*"
+    "wpml/acfml": "*",
+    "wpackagist-plugin/embedpress": "^4.1"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.7.1",

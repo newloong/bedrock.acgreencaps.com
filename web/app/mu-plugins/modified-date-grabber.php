@@ -10,22 +10,26 @@
 use function Env\env;
 
 // Add modified date column to posts and pages lists
-function custom_modified_date_column($defaults) {
+function custom_modified_date_column($defaults)
+{
     $defaults['modified_date'] = 'Modified Date';
     return $defaults;
 }
-function custom_modified_date_column_content($column_name, $post_ID) {
+function custom_modified_date_column_content($column_name, $post_ID)
+{
     if ($column_name == 'modified_date') {
         $modified_date = get_post_field('post_modified', $post_ID);
         $formatted_date = date_i18n('Y/m/d \a\t g:i a', strtotime($modified_date));
         echo 'Modified ' . '<br>' . esc_html($formatted_date);
     }
 }
-function custom_modified_date_column_sortable($columns) {
+function custom_modified_date_column_sortable($columns)
+{
     $columns['modified_date'] = 'modified_date';
     return $columns;
 }
-function custom_sortable_columns_orderby($query) {
+function custom_sortable_columns_orderby($query)
+{
     if (!is_admin() || !$query->is_main_query()) {
         return;
     }

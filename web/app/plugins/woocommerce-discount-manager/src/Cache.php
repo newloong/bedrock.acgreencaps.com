@@ -183,7 +183,7 @@ class Cache {
 			function () {
 				$orm       = wdm()->orm();
 				$discounts = $orm( Discount::class )
-					->filter( [ 'published', 'ordered' ] )
+					->filter( [ 'published', 'priority' ] )
 					->with( 'settings' )
 					->all();
 

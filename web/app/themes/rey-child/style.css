@@ -5,11 +5,25 @@
  * Author: newloong.com
  * Author URI:  https://newloong.com
  * Template: rey
- * Version: 1.0.1
+ * Version: 1.0.69
  * License: General Public License
  * License URI: http://www.gnu.org/licenses/gpl.html
  * Text Domain: rey-child
  */
+
+.rey-ecommSidebar {
+    section {
+        border-bottom: 1px solid color-mix(in hsl, currentColor 8%, transparent);
+        margin-top: 20px;
+        padding-bottom: 20px;
+
+        &:first-child {
+            border-bottom: none;
+            margin-top: 0;
+            padding-bottom: 0;
+        }
+    }
+}
 
 /**
 :root {
@@ -48,6 +62,59 @@
 }
 */
 
+.rey-card.--manhattan .__captionBtn a:hover {
+    opacity: 1 !important;
+}
+
+.btn.btn-primary-outline,
+.elementor-button-primary-outline .elementor-button,
+.woocommerce .button.rey-btn--primary-out {
+    --btn-padding: 5px 15px !important;
+    --btn-bd-w: 2px !important;
+    border-radius: 100px !important;
+}
+
+.elementor-animation-grow:active,
+.elementor-animation-grow:focus,
+.elementor-animation-grow:hover,
+.btn.btn-primary-outline:hover,
+.elementor-button-primary-outline .elementor-button:hover,
+.woocommerce .button.rey-btn--primary-out:hover {
+    /* --btn-bd-c: var(--e-global-color-accent); */
+    /* transform: scale(1.1); */
+    transform: perspective(1px)scale(1.044)translate(0, 0) !important;
+}
+
+/*
+.rey-card.--manhattan .__captionBtn a:hover {
+    --e-transform-scale: 1.02;
+}*/
+
+/*
+.btn.btn-dash-line:hover, .btn.btn-dash:hover, .elementor-button-dashed .elementor-button:hover {
+    --btn-dash-t: initial;
+}
+*/
+
+/** Form button icon */
+.button-arrow-right-circle {
+    .elementor-button-icon {
+        border: 2px solid;
+        border-radius: 100px;
+        padding: 12px 10.5px;
+    }
+
+    .elementor-button-content-wrapper {
+        &:hover {
+            .elementor-button-icon {
+                -webkit-animation: r-icon-hover .3s ease-out;
+                animation: r-icon-hover .3s ease-out;
+            }
+        }
+    }
+}
+
+
 .wpml-ls-legacy-list-horizontal {
     padding: 0;
 
@@ -59,6 +126,7 @@
 .rey-mainNavigation--desktop .--megamenu-support .elementor-image-box-wrapper,
 .rey-mainNavigation--desktop .--megamenu-support .has-post-thumbnail {
     display: flex;
+    column-gap: 20px;
 
     img {
         aspect-ratio: 3/2;
@@ -78,10 +146,6 @@
     }
 }
 
-.rey-mainNavigation--desktop .--megamenu-support .elementor-image-box-wrapper {
-    column-gap: 20px;
-}
-
 .rey-summaryAcc-accItem {
     font-size: 1.125rem;
 }
@@ -89,11 +153,52 @@
 .rey-pBadge {
     border: 1px solid #000 !important;
     border-radius: 100px;
-    padding: 3px 7px;
+    padding: 1px 7px;
+    box-shadow: none !important;
 }
 
 .rey-pBadge span {
     background: transparent !important;
+}
+
+/* Home page */
+.hide-active {
+    .rey-toggleBoxes {
+        .rey-toggleBox {
+            &:after {
+                content: "";
+                position: absolute;
+                display: block;
+                opacity: var(--btn-line-o, 1);
+                width: var(--btn-line-w, 100%);
+                height: var(--btn-line-size, 2px);
+                bottom: var(--btn-line-b, 0);
+                top: var(--btn-line-t, initial);
+                background-color: #088446;
+                transition: .4s var(--easeoutcubic, ease-out);
+                transition-property: transform, opacity;
+                transform: var(--btn-line-tr, scaleX(0));
+                transform-origin: center var(--btn-line-to-x, right);
+                right: var(--btn-line-r, initial);
+                inset-inline-start: var(--btn-line-l, initial);
+            }
+
+            &:hover {
+                &:after {
+                    width: 100%;
+                    left: 0;
+                    --btn-line-tr: scaleX(1);
+                    --btn-line-to-x: left;
+                }
+            }
+
+            @media screen and (min-width: 480px) {
+                &.--active {
+                    display: none;
+                }
+            }
+        }
+    }
 }
 
 /*
@@ -144,6 +249,7 @@
 .horizontal-list {
     display: flex;
     justify-content: start;
+    margin: 70px 0 20px;
 
     ul {
         display: flex;
@@ -153,6 +259,10 @@
 
     li {
         margin: 0 20px 0 0;
+
+        img {
+            height: 60px;
+        }
     }
 }
 
@@ -171,4 +281,38 @@
         margin-left: auto;
         width: 70%;
     }
+
+    ol {
+        margin-top: 5px;
+    }
+}
+
+/* sup {
+    vertical-align: super;
+    font-size: smaller;
+} */
+
+/* Products List Page */
+:is(.reyajfilter-layered-nav, .woocommerce-widget-layered-nav).--style-checkboxes li .__checkbox:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 7px;
+    height: 7px;
+    border: 3px solid HSL(var(--neutral-0));
+    border-top: 3px solid HSL(var(--neutral-0));
+    border-left: 3px solid HSL(var(--neutral-0));
+    border-radius: 100px;
+    opacity: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg) scale(0.9);
+    transform: translate(-50%, -50%) rotate(45deg) scale(0.9)
+}
+
+.reyajfilter-active-filters a {
+    border-radius: 100px;
+}
+
+.reyajfilter-searchbox input {
+    border-radius: 100px;
 }

@@ -35,4 +35,3 @@ wp-cli.local.yml
 !web/app/plugins/rey-core
 !web/app/plugins/woocommerce-discount-manager
 !web/app/plugins/woocommerce-social-login
-

@@ -23,6 +23,7 @@ class Percentage extends Reduction {
 	 * @param array $cart_item Optional. The cart item.
 	 */
 	public function apply_reduction( \WC_Product &$product, array &$cart_item = [] ): void {
+		$product_id = $product->get_parent_id() ?: $product->get_id();
 
 		// If a sale price is set, use that instead of calculating it.
 		if ( $this->has_sale_price() ) {
@@ -32,12 +33,13 @@ class Percentage extends Reduction {
 			if ( ! empty( $cart_item ) ) {
 				$this->set_cart_item_data( $cart_item, floatval( Products::get_product_price( $product ) ), $this->get_sale_price() );
 			}
-			wdm()->cache()->add_discounted_product( $product->get_id() );
+
+			wdm()->cache()->add_discounted_product( $product_id );
 
 			if ( $this->has_discount() ) {
 				wdm()->cache()->track_discount(
 					$this->get_discount()->id(),
-					$product->get_id()
+					$product_id
 				);
 			}
 			return;
@@ -57,12 +59,12 @@ class Percentage extends Reduction {
 			$this->set_cart_item_data( $cart_item, $price, $discounted_price );
 		}
 
-		wdm()->cache()->add_discounted_product( $product->get_id() );
+		wdm()->cache()->add_discounted_product( $product_id );
 
 		if ( $this->has_discount() ) {
 			wdm()->cache()->track_discount(
 				$this->get_discount()->id(),
-				$product->get_id()
+				$product_id
 			);
 		}
 	}
@@ -73,8 +75,8 @@ class Percentage extends Reduction {
 	 * @param \WC_Order_Item_Product $item
 	 */
 	public function apply_reduction_to_order_item( \WC_Order_Item_Product &$item ): void {
-
 		$product          = $item->get_product();
+		$product_id       = $product->get_parent_id() ?: $product->get_id();
 		$product_quantity = $item->get_quantity();
 		$price            = floatval( Products::get_product_price( $product ) );
 
@@ -87,12 +89,12 @@ class Percentage extends Reduction {
 				$item->set_subtotal( $this->get_sale_price() );
 				$item->set_total( $this->get_sale_price() );
 			}
-			wdm()->cache()->add_discounted_product( $product->get_id() );
+			wdm()->cache()->add_discounted_product( $product_id );
 
 			if ( $this->has_discount() ) {
 				wdm()->cache()->track_discount(
 					$this->get_discount()->id(),
-					$product->get_id()
+					$product_id
 				);
 			}
 			return;
@@ -112,12 +114,12 @@ class Percentage extends Reduction {
 			$item->set_total( $discounted_price );
 		}
 
-		wdm()->cache()->add_discounted_product( $product->get_id() );
+		wdm()->cache()->add_discounted_product( $product_id );
 
 		if ( $this->has_discount() ) {
 			wdm()->cache()->track_discount(
 				$this->get_discount()->id(),
-				$product->get_id()
+				$product_id
 			);
 		}
 	}

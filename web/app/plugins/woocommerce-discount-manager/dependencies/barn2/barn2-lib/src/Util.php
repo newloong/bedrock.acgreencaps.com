@@ -349,7 +349,7 @@ class Util
         if (!\function_exists('get_plugin_data')) {
             require_once \ABSPATH . 'wp-admin/includes/plugin.php';
         }
-        return \get_plugin_data($plugin->get_file());
+        return \get_plugin_data($plugin->get_file(), \false, \false);
     }
     /**
      * Loops through all active plugins on the user's website and returns ones that are authored by Barn2

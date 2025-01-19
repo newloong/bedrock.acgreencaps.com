@@ -17,7 +17,8 @@ defined( 'ABSPATH' ) || exit;
 Disable_WP_Customizer::init();
 
 class Disable_WP_Customizer {
-		public static function init(): void {
+	
+	public static function init(): void {
 		if ('development' !== env('WP_ENV')) {
 			add_filter( 'map_meta_cap', [ __CLASS__, 'map_meta_cap__remove_customize_capability' ], 10, 2 );
 			add_action( 'admin_init', [ __CLASS__, 'on_admin_init' ], 10 );
@@ -28,7 +29,7 @@ class Disable_WP_Customizer {
 		remove_action( 'plugins_loaded', '_wp_customize_include', 10 );
 		remove_action( 'admin_enqueue_scripts', '_wp_customize_loader_settings', 11 );
 		add_action( 'load-customize.php', [ __CLASS__, 'on_load_customizer', ] );
-		add_action('admin_head', function() { echo '<style> p.parent-theme { display:none; } </style>'; });
+		add_action('admin_head', function() { echo '<style>p.parent-theme,.customize-pane-parent .acontrol-panel-themes,.elementor-add-section-area-button.rey-templatesButton{display:none!important}</style>'; });
         remove_submenu_page('rey-dashboard','rey-importer-manager'); 
         remove_submenu_page('rey-dashboard','rey-modules-manager'); 
         remove_submenu_page('rey-dashboard','rey-plugins-manager');

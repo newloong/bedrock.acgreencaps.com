@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7f0220dc7049e4d41846290e91576aa4",
+    "content-hash": "ad0f3b7dbb440edac4c4d5224bb076ef",
     "packages": [
         {
             "name": "composer/installers",
@@ -1185,15 +1185,15 @@
         },
         {
             "name": "wpackagist-plugin/elementor",
-            "version": "3.26.3",
+            "version": "3.26.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/elementor/",
-                "reference": "tags/3.26.3"
+                "reference": "tags/3.26.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/elementor.3.26.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/elementor.3.26.4.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -1202,16 +1202,34 @@
             "homepage": "https://wordpress.org/plugins/elementor/"
         },
         {
-            "name": "wpackagist-plugin/mailchimp-for-wp",
-            "version": "4.9.20",
+            "name": "wpackagist-plugin/embedpress",
+            "version": "4.1.8",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/mailchimp-for-wp/",
-                "reference": "tags/4.9.20"
+                "url": "https://plugins.svn.wordpress.org/embedpress/",
+                "reference": "tags/4.1.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/mailchimp-for-wp.4.9.20.zip"
+                "url": "https://downloads.wordpress.org/plugin/embedpress.4.1.8.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/embedpress/"
+        },
+        {
+            "name": "wpackagist-plugin/mailchimp-for-wp",
+            "version": "4.9.21",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/mailchimp-for-wp/",
+                "reference": "tags/4.9.21"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/mailchimp-for-wp.4.9.21.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -1257,15 +1275,15 @@
         },
         {
             "name": "wpackagist-plugin/seo-by-rank-math",
-            "version": "1.0.234.1",
+            "version": "1.0.235",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/seo-by-rank-math/",
-                "reference": "tags/1.0.234.1"
+                "reference": "tags/1.0.235"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/seo-by-rank-math.1.0.234.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/seo-by-rank-math.1.0.235.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -1293,15 +1311,15 @@
         },
         {
             "name": "wpackagist-plugin/simple-history",
-            "version": "5.3.0",
+            "version": "5.4.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/simple-history/",
-                "reference": "tags/5.3.0"
+                "reference": "tags/5.4.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/simple-history.5.3.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/simple-history.5.4.4.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -1329,15 +1347,15 @@
         },
         {
             "name": "wpackagist-plugin/woocommerce",
-            "version": "9.5.1",
+            "version": "9.5.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/woocommerce/",
-                "reference": "tags/9.5.1"
+                "reference": "tags/9.5.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/woocommerce.9.5.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/woocommerce.9.5.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -1347,15 +1365,15 @@
         },
         {
             "name": "wpackagist-plugin/woocommerce-paypal-payments",
-            "version": "2.9.5",
+            "version": "2.9.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/woocommerce-paypal-payments/",
-                "reference": "tags/2.9.5"
+                "reference": "tags/2.9.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/woocommerce-paypal-payments.2.9.5.zip"
+                "url": "https://downloads.wordpress.org/plugin/woocommerce-paypal-payments.2.9.6.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -1386,7 +1404,7 @@
             "version": "2.1.4.2",
             "dist": {
                 "type": "zip",
-                "url": "https://wpml.org/?download=1097589&version=2.1.4.2&subscription_key=044aa134130383f8274aa31211f9998f&user_id=89393&t=1735528824"
+                "url": "https://wpml.org/?download=1097589&version=2.1.4.2&subscription_key=044aa134130383f8274aa31211f9998f&user_id=89393&t=1736661631"
             },
             "type": "wordpress-plugin"
         },
@@ -1395,7 +1413,7 @@
             "version": "4.6.15",
             "dist": {
                 "type": "zip",
-                "url": "https://wpml.org/?download=6088&version=4.6.15&subscription_key=044aa134130383f8274aa31211f9998f&user_id=89393&t=1735528824"
+                "url": "https://wpml.org/?download=6088&version=4.6.15&subscription_key=044aa134130383f8274aa31211f9998f&user_id=89393&t=1736661631"
             },
             "type": "wordpress-plugin"
         },
@@ -1404,7 +1422,7 @@
             "version": "5.3.9",
             "dist": {
                 "type": "zip",
-                "url": "https://wpml.org/?download=637370&version=5.3.9&subscription_key=044aa134130383f8274aa31211f9998f&user_id=89393&t=1735528824"
+                "url": "https://wpml.org/?download=637370&version=5.3.9&subscription_key=044aa134130383f8274aa31211f9998f&user_id=89393&t=1736661631"
             },
             "type": "wordpress-plugin"
         },
@@ -1413,7 +1431,7 @@
             "version": "2.1.0.1",
             "dist": {
                 "type": "zip",
-                "url": "https://wpml.org/?download=3566177&version=2.1.0.1&subscription_key=044aa134130383f8274aa31211f9998f&user_id=89393&t=1735528824"
+                "url": "https://wpml.org/?download=3566177&version=2.1.0.1&subscription_key=044aa134130383f8274aa31211f9998f&user_id=89393&t=1736661631"
             },
             "type": "wordpress-plugin"
         },
@@ -1422,7 +1440,7 @@
             "version": "0.0.3",
             "dist": {
                 "type": "zip",
-                "url": "https://wpml.org/?download=1442229&version=0.0.3&subscription_key=044aa134130383f8274aa31211f9998f&user_id=89393&t=1735528824"
+                "url": "https://wpml.org/?download=1442229&version=0.0.3&subscription_key=044aa134130383f8274aa31211f9998f&user_id=89393&t=1736661631"
             },
             "type": "wordpress-plugin"
         },
@@ -1431,7 +1449,7 @@
             "version": "3.2.18",
             "dist": {
                 "type": "zip",
-                "url": "https://wpml.org/?download=6092&version=3.2.18&subscription_key=044aa134130383f8274aa31211f9998f&user_id=89393&t=1735528824"
+                "url": "https://wpml.org/?download=6092&version=3.2.18&subscription_key=044aa134130383f8274aa31211f9998f&user_id=89393&t=1736661631"
             },
             "type": "wordpress-plugin"
         }
@@ -1443,12 +1461,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "9dd07280fc4c5f6c3d2a3da5e4058fc7288c2a1d"
+                "reference": "a717959d5f0bf7c9a881efdbb7ec0da4454a14ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/9dd07280fc4c5f6c3d2a3da5e4058fc7288c2a1d",
-                "reference": "9dd07280fc4c5f6c3d2a3da5e4058fc7288c2a1d",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/a717959d5f0bf7c9a881efdbb7ec0da4454a14ac",
+                "reference": "a717959d5f0bf7c9a881efdbb7ec0da4454a14ac",
                 "shasum": ""
             },
             "conflict": {
@@ -1570,7 +1588,7 @@
                 "datatables/datatables": "<1.10.10",
                 "david-garcia/phpwhois": "<=4.3.1",
                 "dbrisinajumi/d2files": "<1",
-                "dcat/laravel-admin": "<=2.1.3",
+                "dcat/laravel-admin": "<=2.1.3|==2.2.0.0-beta|==2.2.2.0-beta",
                 "derhansen/fe_change_pwd": "<2.0.5|>=3,<3.0.3",
                 "derhansen/sf_event_mgt": "<4.3.1|>=5,<5.1.1|>=7,<7.4",
                 "desperado/xml-bundle": "<=0.1.7",
@@ -1692,6 +1710,7 @@
                 "grumpydictator/firefly-iii": "<6.1.17",
                 "gugoan/economizzer": "<=0.9.0.0-beta1",
                 "guzzlehttp/guzzle": "<6.5.8|>=7,<7.4.5",
+                "guzzlehttp/oauth-subscriber": "<0.8.1",
                 "guzzlehttp/psr7": "<1.9.1|>=2,<2.4.5",
                 "haffner/jh_captcha": "<=2.1.3|>=3,<=3.0.2",
                 "harvesthq/chosen": "<1.8.7",
@@ -1852,10 +1871,12 @@
                 "neos/media-browser": "<7.3.19|>=8,<8.0.16|>=8.1,<8.1.11|>=8.2,<8.2.11|>=8.3,<8.3.9",
                 "neos/neos": ">=1.1,<1.1.3|>=1.2,<1.2.13|>=2,<2.0.4|>=2.3,<3.0.20|>=3.1,<3.1.18|>=3.2,<3.2.14|>=3.3,<5.3.10|>=7,<7.0.9|>=7.1,<7.1.7|>=7.2,<7.2.6|>=7.3,<7.3.4|>=8,<8.0.2",
                 "neos/swiftmailer": "<5.4.5",
+                "nesbot/carbon": "<2.72.6|>=3,<3.8.4",
+                "netcarver/textile": "<=4.1.2",
                 "netgen/tagsbundle": ">=3.4,<3.4.11|>=4,<4.0.15",
                 "nette/application": ">=2,<2.0.19|>=2.1,<2.1.13|>=2.2,<2.2.10|>=2.3,<2.3.14|>=2.4,<2.4.16|>=3,<3.0.6",
                 "nette/nette": ">=2,<2.0.19|>=2.1,<2.1.13",
-                "nilsteampassnet/teampass": "<3.0.10",
+                "nilsteampassnet/teampass": "<3.1.3.1-dev",
                 "nonfiction/nterchange": "<4.1.1",
                 "notrinos/notrinos-erp": "<=0.7",
                 "noumo/easyii": "<=0.9",
@@ -1916,10 +1937,10 @@
                 "phpmailer/phpmailer": "<6.5",
                 "phpmussel/phpmussel": ">=1,<1.6",
                 "phpmyadmin/phpmyadmin": "<5.2.1",
-                "phpmyfaq/phpmyfaq": "<3.2.5|==3.2.5",
+                "phpmyfaq/phpmyfaq": "<3.2.5|==3.2.5|>=3.2.10,<=4.0.1",
                 "phpoffice/common": "<0.2.9",
                 "phpoffice/phpexcel": "<1.8.1",
-                "phpoffice/phpspreadsheet": "<1.29.4|>=2,<2.1.3|>=2.2,<2.3.2|>=3.3,<3.4",
+                "phpoffice/phpspreadsheet": "<=1.29.6|>=2,<=2.1.5|>=2.2,<=2.3.4|>=3,<3.7",
                 "phpseclib/phpseclib": "<2.0.47|>=3,<3.0.36",
                 "phpservermon/phpservermon": "<3.6",
                 "phpsysinfo/phpsysinfo": "<3.4.3",
@@ -2045,6 +2066,7 @@
                 "squizlabs/php_codesniffer": ">=1,<2.8.1|>=3,<3.0.1",
                 "ssddanbrown/bookstack": "<24.05.1",
                 "starcitizentools/citizen-skin": ">=2.6.3,<2.31",
+                "starcitizentools/tabber-neue": ">=1.9.1,<2.7.2",
                 "statamic/cms": "<=5.16",
                 "stormpath/sdk": "<9.9.99",
                 "studio-42/elfinder": "<=2.1.64",
@@ -2116,7 +2138,7 @@
                 "thelia/thelia": ">=2.1,<2.1.3",
                 "theonedemon/phpwhois": "<=4.2.5",
                 "thinkcmf/thinkcmf": "<6.0.8",
-                "thorsten/phpmyfaq": "<4",
+                "thorsten/phpmyfaq": "<=4.0.1",
                 "tikiwiki/tiki-manager": "<=17.1",
                 "timber/timber": ">=0.16.6,<1.23.1|>=1.24,<1.24.1|>=2,<2.1",
                 "tinymce/tinymce": "<7.2",
@@ -2200,7 +2222,7 @@
                 "xpressengine/xpressengine": "<3.0.15",
                 "yab/quarx": "<2.4.5",
                 "yeswiki/yeswiki": "<=4.4.4",
-                "yetiforce/yetiforce-crm": "<=6.4",
+                "yetiforce/yetiforce-crm": "<6.5",
                 "yidashi/yii2cmf": "<=2",
                 "yii2mod/yii2-cms": "<1.9.2",
                 "yiisoft/yii": "<1.1.29",
@@ -2290,7 +2312,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-12-27T20:05:23+00:00"
+            "time": "2025-01-08T21:04:52+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
