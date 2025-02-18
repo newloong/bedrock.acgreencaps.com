@@ -26,8 +26,18 @@ web/.htaccess
 # WP-CLI
 wp-cli.local.yml
 
-# SQL
+**/.DS_Store
+
+# trellis-database-uploads-migration
+database_backup/*
 *.sql
+*.sql.gz
+
+# WP Redis
+web/app/object-cache.php
+
+# Query monitor
+web/app/db.php
 
 !screenshot.png
 
