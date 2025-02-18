@@ -5,7 +5,7 @@
  * Author: newloong.com
  * Author URI:  https://newloong.com
  * Template: rey
- * Version: 1.0.69
+ * Version: 1.0.83
  * License: General Public License
  * License URI: http://www.gnu.org/licenses/gpl.html
  * Text Domain: rey-child
@@ -62,6 +62,17 @@
 }
 */
 
+/* mega menu */
+.first-up {
+    .reyEl-menu-nav {
+        li:first-child {
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+    }
+}
+
 .rey-card.--manhattan .__captionBtn a:hover {
     opacity: 1 !important;
 }
@@ -113,7 +124,6 @@
         }
     }
 }
-
 
 .wpml-ls-legacy-list-horizontal {
     padding: 0;
@@ -176,8 +186,7 @@
                 top: var(--btn-line-t, initial);
                 background-color: #088446;
                 transition: .4s var(--easeoutcubic, ease-out);
-                transition-property: transform, opacity;
-                transform: var(--btn-line-tr, scaleX(0));
+                transition-property: transform, opacity transform: var(--btn-line-tr, scaleX(0));
                 transform-origin: center var(--btn-line-to-x, right);
                 right: var(--btn-line-r, initial);
                 inset-inline-start: var(--btn-line-l, initial);
@@ -192,7 +201,11 @@
                 }
             }
 
-            @media screen and (min-width: 480px) {
+            .rey-toggleBox-text-main {
+                text-transform: none !important;
+            }
+
+            @media screen and (min-width: 1025px) {
                 &.--active {
                     display: none;
                 }
@@ -293,6 +306,14 @@
 } */
 
 /* Products List Page */
+li.product .rey-wishlistBtn.--in-wishlist .rey-wishlistBtn-icon {
+    --icon-fill: #c30d23;
+
+    path {
+        stroke: #c30d23;
+    }
+}
+
 :is(.reyajfilter-layered-nav, .woocommerce-widget-layered-nav).--style-checkboxes li .__checkbox:before {
     content: "";
     position: absolute;
