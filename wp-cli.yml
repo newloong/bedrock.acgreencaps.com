@@ -2,9 +2,19 @@ path: web/wp
 server:
   docroot: web
 
-@development:
+"@development":
   ssh: vagrant@acgreencaps.test/srv/www/acgreencaps.com/current
-@staging:
-  ssh: admin@staging.acgreencaps.com/srv/www/acgreencaps.com/current
-@production:
-  ssh: admin@acgreencaps.com/srv/www/acgreencaps.com/current
+# @staging:
+#   ssh: admin@staging.acgreencaps.com/srv/www/acgreencaps.com/current
+# @production:
+#   ssh: admin@acgreencaps.com/srv/www/acgreencaps.com/current
+
+# "@development":
+#   ssh: "vagrant@acgreencaps.test"
+#   path: "/srv/www/acgreencaps.com/current/web/wp"
+"@production":
+  ssh: "web@34.19.39.142:22"
+  path: "/srv/www/acgreencaps.com/current/web/wp"
+"@staging":
+  ssh: "web@your_server_hostname:22"
+  path: "/srv/www/acgreencaps.com/current/web/wp"
