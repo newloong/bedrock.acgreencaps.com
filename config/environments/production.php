@@ -17,3 +17,4 @@ use Roots\WPConfig\Config;
 Config::define('DISALLOW_INDEXING', true);
 // Limit the Number of Revisions Stored
 Config::define('WP_POST_REVISIONS', 15);
+Config::define('WP_MEMORY_LIMIT', '4G');
