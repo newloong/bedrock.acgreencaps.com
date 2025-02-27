@@ -49,3 +49,13 @@ if ('development' === env('WP_ENV')) {
     add_filter('manage_edit-page_sortable_columns', 'custom_modified_date_column_sortable'); // Add this line to make the column sortable in pages list
     add_action('pre_get_posts', 'custom_sortable_columns_orderby');
 }
+
+// Change the From address.
+add_filter('wp_mail_from', function ($original_email_address) {
+    return 'from-website@acgreencaps.com';
+});
+
+// Change the From name.
+add_filter('wp_mail_from_name', function ($original_email_from) {
+    return 'acgreencaps.com';
+});
